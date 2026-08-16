@@ -7,7 +7,7 @@ const parrafo = document.getElementById("feedback");
 boton.addEventListener("click", function() {
 
     colores.length = 0;
-    palette.innerHTML = "";
+    contenedorPaleta.innerHTML = "";
     parrafo.textContent = `Paleta de ${cantidadColores.value} colores generada!`;
 
     for (let i = 0; i < parseInt(cantidadColores.value); i++) {
@@ -26,7 +26,7 @@ boton.addEventListener("click", function() {
 
         tarjeta.style.backgroundColor = colorHex;
 
-        palette.appendChild(tarjeta);
+        contenedorPaleta.appendChild(tarjeta);
 
         const codigo = document.createElement("div");
         codigo.textContent = colorHex;
