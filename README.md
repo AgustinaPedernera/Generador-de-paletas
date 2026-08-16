@@ -1,3 +1,4 @@
+
 # Generador de Paletas
 
 ## Descripción
@@ -46,3 +47,6 @@ PROYECTO1_AGUSTINAPEDERNERA/
 │   └── script.js
 ├── index.html
 └── README.md
+
+# Generador-de-paletas
+
