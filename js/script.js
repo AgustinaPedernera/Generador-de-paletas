@@ -4,11 +4,18 @@ const cantidadColores = document.getElementById("palette-size");
 const contenedorPaleta = document.getElementById("palette");
 const parrafo = document.getElementById("feedback");
 
-boton.addEventListener("click", function() {
+function mostrarFeedback(mensaje) {
+    parrafo.textContent = mensaje;
 
+    setTimeout(function() {
+        parrafo.textContent = "";
+    }, 2000);
+}
+
+boton.addEventListener("click", function() {  
     colores.length = 0;
     contenedorPaleta.innerHTML = "";
-    parrafo.textContent = `Paleta de ${cantidadColores.value} colores generada!`;
+    mostrarFeedback(`Paleta de ${cantidadColores.value} colores generada!`);
 
     for (let i = 0; i < parseInt(cantidadColores.value); i++) {
         const rojo = Math.floor(Math.random() * 256);
@@ -34,7 +41,7 @@ boton.addEventListener("click", function() {
 
         codigo.addEventListener("click", function() {
             navigator.clipboard.writeText(colorHex);
-            parrafo.textContent = "¡Código HEX copiado!";
+            mostrarFeedback("¡Código HEX copiado!");
         });
 
         tarjeta.appendChild(codigo);
