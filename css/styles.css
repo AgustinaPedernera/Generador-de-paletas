@@ -204,6 +204,25 @@ footer p {
     margin: 0;
 }
 
+.footer-links {
+    margin-top: 0.5rem;
+}
+
+.footer-links a {
+    color: #b9aaa0;
+    font-size: 0.85rem;
+    text-decoration: underline;
+}
+
+.footer-links a:hover {
+    color: #c9785b;
+}
+
+.footer-links a:focus-visible {
+    outline: 2px solid #c9785b;
+    outline-offset: 3px;
+}
+
 
 /* RESPONSIVE */
 
