@@ -38,15 +38,16 @@ La aplicación permite seleccionar la cantidad de colores que se desean generar 
 ## Estructura del proyecto
 
 ```text
-PROYECTO1_AGUSTINAPEDERNERA/
-├── css/
-│   └── styles.css
-├── documentacion/
+ProyectoM1_AgustinaPedernera/
+├── Desarrollo/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── script.js
+│   └── index.html
+├── Documentación/
+│   ├── Capturas/
+│   ├── Capturas-IA/
 │   └── uso-ia.md
-├── js/
-│   └── script.js
 ├── index.html
 └── README.md
-
-# Generador-de-paletas
-
