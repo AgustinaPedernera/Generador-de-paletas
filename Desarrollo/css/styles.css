@@ -28,23 +28,6 @@ nav > a {
     font-weight: bold;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 2rem;
-}
-
-nav ul a {
-    color: #f3ede2;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-nav ul a:hover {
-    color: #c9785b;
-}
 
 nav a:focus-visible {
     outline: 3px solid #c9785b;
