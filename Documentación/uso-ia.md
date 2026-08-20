@@ -161,6 +161,21 @@ Los colores comenzaron a mostrarse visualmente como tarjetas dentro del contened
 
 Se consultó cómo representar los colores mediante códigos HEX y cómo utilizar ese valor dentro de las tarjetas.
 
+## 7. Generación de colores en formato HSL
+
+### Consulta realizada
+
+Se revisó el proyecto para verificar el cumplimiento de la consigna, que requería generar colores en formato HSL junto con HEX o RGBA.
+
+### Trabajo realizado
+
+Se modificó la generación de colores para utilizar valores aleatorios de tono, saturación y luminosidad:
+
+```javascript
+const h = Math.floor(Math.random() * 361);
+const s = Math.floor(Math.random() * 101);
+const l = Math.floor(Math.random() * 101);
+
 ### Trabajo realizado
 
 Se generaron códigos HEX a partir de los valores RGB y se comprobó su funcionamiento primero en la consola y posteriormente en la interfaz.
@@ -173,7 +188,7 @@ Cada tarjeta muestra su código HEX correspondiente.
 
 ---
 
-## 7. Feedback al generar una paleta
+## 8. Feedback al generar una paleta
 
 ### Consulta realizada
 
@@ -199,7 +214,7 @@ Después de generar una paleta, el usuario recibe un mensaje indicando la cantid
 
 ---
 
-## 8. Funcionalidad extra: copiar códigos HEX
+## 9. Funcionalidad extra: copiar códigos HEX
 
 ### Consulta realizada
 
@@ -225,7 +240,7 @@ Esta funcionalidad se incorporó como una de las opciones extra del proyecto.
 
 ---
 
-## 9. Diseño visual
+## 10. Diseño visual
 
 ### Consulta realizada
 
@@ -254,7 +269,7 @@ Se obtuvo una interfaz visual personalizada en la que los colores generados son 
 
 ---
 
-## 10. Pruebas y correcciones
+## 11. Pruebas y correcciones
 
 Durante el desarrollo se realizaron pruebas en el navegador y en la consola de desarrollo.
 
@@ -274,6 +289,25 @@ Se comprobó:
 Los problemas encontrados se fueron analizando y corrigiendo durante el desarrollo.
 
 ---
+
+## 12. Mejoras de accesibilidad
+
+### Consulta realizada
+
+Se revisaron aspectos básicos de accesibilidad para mejorar el uso de la aplicación mediante teclado y asegurar un contraste visual adecuado.
+
+### Trabajo realizado
+
+Se agregó `role="button"` y `tabindex="0"` al elemento utilizado para copiar el código HEX, permitiendo que pueda recibir el foco mediante teclado.
+
+También se incorporó un evento `keydown` para permitir copiar el código utilizando las teclas `Enter` o `Espacio`.
+
+Además, se modificó el color del botón principal para mejorar el contraste entre el fondo y el texto.
+
+### Resultado
+
+La función de copiar el código HEX puede utilizarse tanto con mouse como con teclado y el botón principal presenta un contraste visual mejorado.
+
 
 ## Conclusión
 

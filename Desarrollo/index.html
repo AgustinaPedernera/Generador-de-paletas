@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Paletas</title>
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+    <nav>
+        <a href="#">Paleta Random</a>
+
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section>
+        <h1>Generador de paletas</h1>
+
+        <p>
+            Generá una paleta de colores aleatoria.
+        </p>
+    </section>
+
+    <section>
+        <!-- controles -->
+         <label for="palette-size">
+        Cantidad de colores
+    </label>
+
+    <select id="palette-size">
+        <option value="6">6 colores</option>
+        <option value="8">8 colores</option>
+        <option value="9">9 colores</option>
+    </select>
+
+    
+
+    <button type="button" id="generate-btn">
+        Generar paleta
+    </button>
+    </section>
+
+    <section>
+        <!-- paleta -->
+         <p id="feedback" aria-live="polite"></p>
+         <div id="palette"></div>
+    </section>
+
+    </main>
+
+
+<footer>
+    <p>Generador de Paletas - Proyecto Integrador</p>
+
+<div class="footer-links">
+        <a href="https://github.com/AgustinaPedernera/Generador-de-paletas"
+           target="_blank"
+           rel="noopener noreferrer">
+            Repo en GitHub
+        </a>
+    </div>
+
+</footer>
+
+ <script src="./js/script.js"></script>
+ </body>
+</html>

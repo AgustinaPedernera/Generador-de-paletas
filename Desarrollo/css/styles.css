@@ -110,7 +110,7 @@ select {
 
 button {
     border: none;
-    background-color: #c9785b;
+    background-color: #9f4f38;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
@@ -118,7 +118,7 @@ button {
 }
 
 button:hover {
-    background-color: #b7654b;
+    background-color: #843f2d;
     transform: translateY(-2px);
 }
 
